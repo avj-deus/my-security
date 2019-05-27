@@ -1,0 +1,18 @@
+
+#APACHE
+server:
+  port: 8888
+
+spring:
+  #SECUTITY
+  security:
+    user:
+      name: user
+      password: password
+  #CLOUD CONFIG SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ggamco/Spring-Cloud-Config
+          skipSslValidation: true
